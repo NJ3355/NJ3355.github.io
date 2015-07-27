@@ -1,2 +1,0 @@
-# portfolio-git
-My portfolio
