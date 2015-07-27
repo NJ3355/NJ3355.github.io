@@ -69,7 +69,7 @@
                             <ul>
                                 <li>Web Development I & II (HTML & CSS)</li>
                                 <li>Javascript</li>
-                                <li>Web Database Porgramming (PHP & MySQL)</li>
+                                <li>Web Database Programming (PHP & MySQL)</li>
                                 <li>XML</li>
                             </ul>
                         <p id="graduationFont">Graduation: Fall of 2015</p>
@@ -132,17 +132,18 @@
               <img src="github.png" /><p><a href="https://github.com/nj3355">GitHub: github.com/NJ3355</a></p>
             </div>
             <div id="contactForm">
-               <form>
+               <form action="contactForm.php" method="post">
                 Your Name:
-                <input type="text" name="firstname">
+                <input type="text" name="cf_name">
                 <br>
                 Your E-mail:
-                <input type="text" name="lastname">
+                <input type="text" name="cf_email">
                 <br>
                 Your Message:<br>
-                 <textarea rows="4" cols="50">
-                  ***FEATURE UNAVAILABLE***
-                 </textarea> 
+                 <textarea name="cf_message" rows="4" cols="50">
+                  Type Message Here
+                 </textarea> <br/>
+                 <input type="submit" value="Send">
               </form> 
               <a href="https://github.com/NJ3355/resume">
               <div id="resume">
