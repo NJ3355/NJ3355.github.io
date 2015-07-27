@@ -1,2 +1,2 @@
 # portfolio-git
-My portfolio-not finished at all.
+My portfolio
