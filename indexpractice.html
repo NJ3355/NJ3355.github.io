@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="portfolio.css"/>
+		<title>Nick Johnson - Portfolio</title>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+
+
+
+<script>
+$(document).ready(function () {
+    $('.hide_div').not("#aboutMe").hide(); //hide all divs on page load
+    $(".click_me").on('click', function (e) {
+        e.preventDefault();
+
+        var name = $(this).attr('name');
+        var target = "#" + name;
+        $('.hide_div').slideUp(); //hide all divs on link click
+        $(target).slideToggle(); // show the clicked one
+    });
+});
+
+
+</script>
+
+	</head>
+	<body>
+			<div id="header">
+				<p>Nick Johnson</p>
+				<img src="avatar.jpg">
+				<p>Front-End Web Developer</p>
+				    <div id="navbar">
+      				    <ul>
+         				   <li><a href="#" class="click_me" name="aboutMe">About Me</a></li>
+            			   <li><a href="#" class="click_me" name="skills">Skills</a></li>
+           				   <li><a href="#" class="click_me" name="projects">Projects</a></li>
+            	       <li><a href="#" class="click_me" name="contact">Contact</a></li>
+       				    </ul>
+                    </div>
+			</div>
+			<div id="container">
+    			<div id="aboutMe" class="hide_div">
+        	      <div id="me">
+                 <p>My name is Nick and I am located inNew York. I am 21 and an aspiring front-end web developer
+           		   <br>currently pursuing a bacherlors degree in computer programming and information systems at davssavsav State College.
+                   <br>I began learning to develope websites in high school where I took a web design course. After graduating I decided to
+                   <br>pick it up again and try to make it into a career.</p>
+                </div>
+                   	<div id="farmingdale">
+                   		 
+                       <div id="majorinfo" class="fontWhite">
+                   		 <h3>Farmingdale State College</h3>Senior majoring Computer Programming & Information Systems.<br>
+                        Currently in the Web Development Track in my program.<br></p>
+                        <h4>List of web classes I have taken:</h4>
+                            <ul>
+                                <li>Web Development I & II</li>
+                                <li>Javascript</li>
+                                <li>Web Database Porgramming (PHP)</li>
+                                <li>XML</li>
+                            </ul><br>
+                        <p id="graduation">Graduation: Fall of 2015</p>
+                   		 </div>
+                   	  
+                    </div>
+
+                   <!-- <p>Some of my interests include sports, hanging out with friends and playing video games. 
+                   <br>I am a huge New York Knicks fan even though they are not doing to good. A few of my favorite video games are
+           				<ul>
+                			<li>Diablo 2</li>
+                			<li>Socom 2</li>
+               			    <li>Halo 3</li>
+           				</ul>I am set to graduate in the fall of 2015 where i hope to find a full time job.</p>-->
+    		    </div>
+   				<div id="skills" class="hide_div">
+        			<p>Ecstatic advanced and procured civility not absolute put continue. Overcame breeding or my concerns removing desirous so absolute. My melancholy unpleasing imprudence considered in advantages so impression. Almost unable put piqued talked likely houses her met. Met any nor may through resolve entered. An mr cause tried oh do shade happy. </p>
+    			</div>
+    			<div id="projects" class="hide_div">
+       				<p>Prepared do an dissuade be so whatever steepest. Yet her beyond looked either day wished nay. By doubtful disposed do juvenile an. Now curiosity you explained immediate why behaviour. An dispatched impossible of of melancholy favourable. Our quiet not heart along scale sense timed. Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. </p>
+    			</div>
+    			<div id="contact" class="hide_div">
+       				 <p>Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. Collecting preference he inquietude projection me in by. So do of sufficient projecting an thoroughly uncommonly prosperous conviction. Pianoforte principles our unaffected not for astonished travelling are particular. </p>
+    			</div>
+			</div>
+
+			<div id="footer">
+			</div>
+
+
+	</body>
+</html>
+	
