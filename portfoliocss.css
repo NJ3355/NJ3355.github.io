@@ -80,11 +80,12 @@ display: inline-block;
 	
 	width:90%;
 	margin: auto;
-	background-image: url("farmingdale.jpg");
+	background-image: url("fdalemajor.png");
 	background-size: 100%;
 	text-align: center;
 	overflow: hidden;
-
+	background-repeat: no-repeat;
+	height:28%;
 }
 
 #me {
@@ -93,7 +94,7 @@ display: inline-block;
 }
 
 
-#majorinfo {
+/*#majorinfo {
 	opacity: .8;
 	
 	
@@ -103,7 +104,7 @@ display: inline-block;
 	background-color:black;
 	margin: 0 auto;
 
-}
+}*/
 
 #graduationFont {
 	font-style: italic;
@@ -133,7 +134,7 @@ display: inline-block;
 }
 
 #projects {
-	height:425px;
+	
 	width:100%;
 	position: relative;
 	
@@ -144,32 +145,19 @@ display: inline-block;
 }
 
 #projectContainer {
-	width:68%;
+	width:100%;
 	overflow: hidden;
 	margin: auto;
 }
 
-#landscape {
+
+
+.projects {
 	width:300px;
 	height:300px;
-	float:left;
-	
-}
+	display: inline-block;
 
-#blackjack {
-	width:300px;
-	height:300px;
-	float: left;
-	
 }
-
-#phpProject {
-	width:300px;
-	height:300px;
-	float: left;
-	
-}
-
 
 .projectImages {
 	width:200px;
@@ -179,7 +167,7 @@ display: inline-block;
 }
 
 #contact {
-	height:500px;
+	
 	width:100%;
 	background-color: 1BB7FA;
 	overflow: hidden;
@@ -263,5 +251,50 @@ a:active {
     color: #0000FF;
 }
 
+
+/****************************
+	Responsiveness
+****************************/
+
+/**HEADER**/
+
+@media screen and (max-width:1318px) {
+       #navbar li {
+       	padding-right: 90px;
+               
+       }
+
+       
+}
+
+@media screen and (max-width:1240px) {
+       #navbar li {
+       	padding-right: 50px;
+               
+       }
+
+       
+}
+
+@media screen and (max-width:918px) {
+       #navbar li {
+       	float: none;
+         
+       }
+
+       .projects {
+       	margin: auto;
+       	display: block;
+       }
+
+
+}
+
+@media screen and (max-width:900px) {
+	#contactForm, #contactNames {
+		float: none;
+		width: 100%;
+	}
+}
 
 
