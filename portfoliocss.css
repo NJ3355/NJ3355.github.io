@@ -92,7 +92,7 @@ display: inline-block;
 #majorinfo {
 	opacity: .8;
 	
-	
+	height: 100%;
 	width:50%;
 	border-style: solid;
 	border-color: black;
