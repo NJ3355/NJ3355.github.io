@@ -76,7 +76,7 @@ display: inline-block;
 	width:90%;
 	margin: auto;
 	background-image: url("farmingdale.jpg");
-	background-size: 100%;
+	background-size: 100% 100%;
 	text-align: center;
 	overflow: hidden;
 	background-repeat: no-repeat;
