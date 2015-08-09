@@ -14,6 +14,21 @@
 <script>
 
 $(document).ready( function() {
+
+/*var position = $("#navbar").offset().top;
+
+function stickyHeader() {
+  if (position < $(document).scrollTop()) {
+    $("#navbar").addClass("sticky");
+  } else {
+    $("#navbar").removeClass("sticky");
+  }
+}
+
+$(window).scroll(function() {
+  stickyHeader();
+});*/
+
   $(".hoverLand").hide();
   $(".hoverBlack").hide();
   $(".hoverList").hide();
@@ -74,7 +89,7 @@ $(document).ready( function() {
                   <h2>About Me</h2>
                  <p>My name is Nick and I am located in New York. I am 22 and an aspiring front-end web developer
                  <br>currently pursuing a bacherlors degree in computer programming and information systems at Farmingdale State College.
-                   <br>I began learning to develope websites in high school where I took a web design course. After entering college I decided to
+                   <br>I began learning to develop websites in high school where I took a web design course. After entering college I decided to
                    <br>pick it up again and try to make it into a career.</p>
                 </div>
                     <div id="farmingdale">
@@ -117,8 +132,10 @@ $(document).ready( function() {
                 <img src="php.png" />
                 <img src="mysql.png" />
                 <img src="java.png" />
+
               </div>
           </div>
+
         </div>
 
           <div id="projects" class="hide_div">
