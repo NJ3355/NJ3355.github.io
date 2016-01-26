@@ -235,6 +235,7 @@ display: inline-block;
 	width:100%;
 	background-color: 1BB7FA;
 	overflow: hidden;
+	padding-bottom: 10px;
 }
 
 #contactForm {
@@ -243,6 +244,14 @@ display: inline-block;
 	
 }
 
+#contactForm input, textarea {
+	border-top: solid 1px;
+	position: relative;
+margin-bottom: 0px;
+padding-bottom: 0.5em;
+border-bottom: 1px solid #EEE;
+
+}
 #contactNames {
 	float: left;
 	width:50%;
