@@ -3,13 +3,60 @@
   <head>
     <link rel="stylesheet" type="text/css" href="portfoliocss.css"/>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Nick - Portfolio</title>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 </script>
 
+<style>
+.social {
+  color: white;
+  margin: 0 1.5em;
 
+}
+
+#contact h4 {
+  margin:0;
+ margin-top:.5em;
+
+}
+
+#contact i:hover {
+   color:gray;
+} 
+
+#contact i{
+  color: white;
+  position: relative;
+}
+
+#contact i h4 {
+  font-size: .3em;
+  color: black;
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+}
+
+#personalContact {
+  margin: 3em 0;
+}
+
+#contact a {
+  display: inline-block;
+
+}
+
+
+#resumePDF {
+ 
+  margin:2em 0;
+}
+
+</style>
 
 <script>
 
@@ -55,6 +102,9 @@ $("a[href^=#]").click(function(e){
   $(".hoverLand").hide();
   $(".hoverBlack").hide();
   $(".hoverList").hide();
+  $(".links").hide();
+
+
 
     $( "#landscape" ).hover(
   function() {
@@ -76,11 +126,25 @@ $("a[href^=#]").click(function(e){
   }, function() {
     $(".hoverList").hide();
   })
+
+
+
+
+$(".social").hover(function() {
+     $(this).find(".links").show();
+   }, function() {
+     $(this).find(".links").hide();
+   })
+
 });
 
 
 
-
+ /*$(".social").hover(function() {
+     $(".links").show();
+   }, function() {
+     $(".links").hide();
+   })*/
 
 
 
@@ -201,32 +265,36 @@ $("a[href^=#]").click(function(e){
           </div>
           <div id="contact" class="hide_div">
                <a name="contact"></a>
-               <h2>Contact</h2>
-            <div id="contactNames">
-              <img src="email.png" /><p> E-Mail: Johnna@Farmingdale.edu</p>
-              <img src="github.png" /><p><a href="https://github.com/nj3355">GitHub: github.com/NJ3355</a></p>
-            </div>
-            <div id="contactForm">
-               <form action="contactForm.php" method="post">
-                Your Name:
-                <input type="text" name="cf_name">
-                <br>
-                Your E-mail:
-                <input type="text" name="cf_email">
-                <br>
-                Your Message:<br>
-                 <textarea name="cf_message" rows="4" cols="50">
-                  Type Message Here
-                 </textarea> <br/>
-                 <input type="submit" value="Send">
-              </form> 
-              <a href="https://github.com/NJ3355/resume/blob/master/resume.pdf">
-              <div id="resume">
-                <h3>Click Here To View My Resume!</h3>
-                <img src="word.png" />
+               <h1>Contact</h1>
+
+             <!-- <div id="resumePDF">
+                <i class="fa fa-file-pdf-o fa-3x"></i>
+                <h4>View My Resume</h4>
+              </div>-->
+              <div id="socialContact">
+                <a href="https://github.com/nj3355">
+                  <i class="fa fa-github fa-3x social">
+                  <h4 class="links">Github</h4></i>
+               </a>
+                <a href="https://github.com/NJ3355/resume/blob/master/resume.pdf">
+                  <i class="fa fa-file-pdf-o fa-3x social">
+                  <h4 class="links">View My Resume</h4></i>
+               </a>
               </div>
-              </a>
-            </div>
+              <div id="personalContact">
+                <a href="njohn33555@gmail.com">
+                  <i class="fa fa-envelope-o fa-3x social">
+                  <h4 class="links">njohn33555@gmail.com</h4>
+                  </i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-phone fa-3x social">
+                  <h4 class="links">516-554-5498</h4>
+                </i>
+                </a>
+              </div>
+
+
           </div>
       </div>
 
