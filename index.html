@@ -62,20 +62,13 @@
 
 $(document).ready( function() {
 
-/*var position = $("#navbar").offset().top;
-
-function stickyHeader() {
-  if (position < $(document).scrollTop()) {
-    $("#navbar").addClass("sticky");
-  } else {
-    $("#navbar").removeClass("sticky");
-  }
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > 100) {
+    jQuery('#mainskills').stop().animate({ right: '0px' });
+} else {
+    jQuery('#mainskills').stop().animate({ right: '-300px' });
 }
-
-$(window).scroll(function() {
-  stickyHeader();
-});*/
-
+});
 
 
 
@@ -138,13 +131,6 @@ $(".social").hover(function() {
 
 });
 
-
-
- /*$(".social").hover(function() {
-     $(".links").show();
-   }, function() {
-     $(".links").hide();
-   })*/
 
 
 

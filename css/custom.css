@@ -1,0 +1,391 @@
+.navbar {
+	margin-bottom: 0;
+}
+
+body {
+	background:#D3E7F0;
+	color: #f7f7f7;
+	
+}
+h1,
+h2 {
+	font-weight: bold;
+	
+	color:black;
+}
+p {
+	
+	color: black;
+	font-size: 1.3em
+}
+
+.jumbotron {
+	
+	color: white;
+	text-align: center;
+	background-image: url("../headerimg2.jpg");
+	background-size: 100% 100%;
+	padding: 15em 0;
+}
+.jumbotron p {
+	color: white;
+	font-size: 26px;
+}
+
+
+
+.btn-primary {
+	color: #fff;
+	background-color: transparent;
+	border-color: white;
+	margin-bottom: 5px;
+}
+
+
+.navbar-inverse {
+	background: #2E2F31;
+	border: 0;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: #043558;
+}
+
+.dropdown-menu {
+	background: #2E2F31;
+	border-radius: 0;
+	border: 0;
+}
+.dropdown-menu li a {
+	padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: #2C463C;
+}
+
+.glyphicon-download {
+	color:white;
+}
+
+.glyphicon-download:hover {
+	color:gray;
+
+}
+
+.col-md-4 ,.col-md-12{
+	padding: 0;
+}
+
+.glyphicon-large {
+	font-size: 100px;
+}
+
+.center {
+	margin:auto;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+#container {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.4em;
+	width: 100%;
+	
+}
+
+
+
+#aboutMe {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 15px;
+	color:black;
+}
+
+
+
+#aboutMe h2{
+	margin-bottom: 1.3em;
+	font-size: 2em;
+}
+
+#farmingdale {
+	
+	width:90%;
+	margin: auto;
+	background-image: url("../farmingdale.jpg");
+	background-size: 100% 100%;
+	text-align: center;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	color: white;
+	
+}
+
+#me {
+	margin-top: 75px;
+	margin-bottom: 100px;
+	width:75%;
+	margin:auto;
+}
+
+#me p {
+	margin-bottom: 3em;
+}
+
+
+#majorinfo {
+	opacity: .8;
+	max-width: 500px;
+	
+	width:100%;
+	border-style: solid;
+	border-color: black;
+	background-color:black;
+	margin: 0 auto;
+
+}
+
+#graduationFont {
+	font-style: italic;
+}
+
+#skills {
+	
+	width:100%;
+	background-color: #3a87c0;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+
+#skills p {
+	font-size: 1.5em;
+}
+
+#skills h1{
+	margin-bottom: .7em;
+	font-size: 2.5em;
+}
+
+#mainskills img {
+	width: 350px;
+	height: 200px;
+}
+
+#familiarskills img {
+	width: 100px;
+	height: 100px;
+	padding-left: 10px;
+}
+
+#skillinfo {
+	width: 65%;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+
+
+.projects {
+	
+	height:300px;
+	position: relative;
+
+
+}
+
+.projects p {
+	font-size: 1.5em;
+}
+
+#projectHeader {
+	display: inline-block;
+
+}
+
+#projectHeader p {
+	font-size: 1.5em;
+}
+
+
+.projects h2 {
+	margin: 0;
+}
+
+.projectImages {
+	width:100%;
+	height:100%;
+	
+
+}
+
+#landscape {
+	display: inline-block;
+	float:left;
+}
+
+.hoverLand {
+	position: absolute;
+	opacity: .8;
+	background-color: #7798bf;
+	width:100%;
+	height:100%;
+	
+}
+
+.hoverFont h1{
+	margin: 1em 0;
+	font-size: 2.5em;
+}
+
+
+
+#blackjack  {
+	display:inline-block;
+	float: right;
+}
+
+.hoverBlack {
+	position: absolute;
+	opacity: .8;
+	background-color: #7798bf;
+	width:100%;
+	height:100%;
+	
+}
+
+
+#list {
+	clear: both;
+	margin: auto;
+}
+
+.hoverList{
+	position: absolute;
+	opacity: .8;
+	background-color:#7798bf;
+	width:100%;
+	height:100%;
+	
+}
+
+#contact {
+	
+	width:100%;
+	background-color: #3a87c0;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+#contact h1 {
+	font-size: 2.5em;
+	margin-bottom: 1em;
+}
+
+.social {
+  color: white;
+  margin: 0 1.5em;
+
+}
+
+#contact h4 {
+  margin:0;
+ margin-top:.5em;
+
+}
+
+#contact i:hover {
+   color:gray;
+} 
+
+#contact i{
+  color: white;
+  position: relative;
+  font-size: 4em;
+}
+
+#contact i h4 {
+  font-size: .4em;
+  color: black;
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+}
+
+#personalContact {
+  margin: 3em 0;
+}
+
+#contact a {
+  display: inline-block;
+
+}
+
+
+#resumePDF {
+ 
+  margin:2em 0;
+}
+
+#toTop {
+	margin: auto;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+
+}
+
+
+#footer {
+	margin: 0 auto;
+	padding: 1em 0;
+	width: 100%;
+	background-color: #2E2F31 ;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	
+}
+
+#footer a {
+	color: white;
+	
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	
+
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color:;
+}
+
+/* mouse over link */
+
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+.txt:hover {
+    text-decoration: underline;
+    
+}
