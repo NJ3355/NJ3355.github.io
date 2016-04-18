@@ -2,7 +2,7 @@
 	Header/Navbar
 *******************************/
 body {
-	background-color: D3E7F0;
+	background-color: #D3E7F0;
 	margin: 0;
 }
 
@@ -124,7 +124,6 @@ display: inline-block;
 #mainskills img {
 	width: 350px;
 	height: 200px;
-	
 }
 
 #familiarskills img {

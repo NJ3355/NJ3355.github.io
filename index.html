@@ -1,74 +1,40 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="portfoliocss.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" type="text/css" href="portfoliocss.css"/>-->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/custom.css" rel="stylesheet">
     <title>Nick - Portfolio</title>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-</script>
-
-<style>
-.social {
-  color: white;
-  margin: 0 1.5em;
-
-}
-
-#contact h4 {
-  margin:0;
- margin-top:.5em;
-
-}
-
-#contact i:hover {
-   color:gray;
-} 
-
-#contact i{
-  color: white;
-  position: relative;
-}
-
-#contact i h4 {
-  font-size: .3em;
-  color: black;
-  position: absolute;
-  left: 50%;
-  white-space: nowrap;
-  transform: translate(-50%, 0);
-}
-
-#personalContact {
-  margin: 3em 0;
-}
-
-#contact a {
-  display: inline-block;
-
-}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
-#resumePDF {
- 
-  margin:2em 0;
-}
-
-</style>
 
 <script>
 
 $(document).ready( function() {
 
-jQuery(window).scroll(function() {
-if (jQuery(this).scrollTop() > 100) {
-    jQuery('#mainskills').stop().animate({ right: '0px' });
-} else {
-    jQuery('#mainskills').stop().animate({ right: '-300px' });
+/*var position = $("#navbar").offset().top;
+
+function stickyHeader() {
+  if (position < $(document).scrollTop()) {
+    $("#navbar").addClass("sticky");
+  } else {
+    $("#navbar").removeClass("sticky");
+  }
 }
-});
+
+$(window).scroll(function() {
+  stickyHeader();
+});*/
+
 
 
 
@@ -84,7 +50,7 @@ $("a[href^=#]").click(function(e){
     }
 
     console.log(dest); 
-      
+    
     $('html,body').animate({ 
         scrollTop: $(dest).offset().top 
       }, 'slow'); 
@@ -133,6 +99,13 @@ $(".social").hover(function() {
 
 
 
+ /*$(".social").hover(function() {
+     $(".links").show();
+   }, function() {
+     $(".links").hide();
+   })*/
+
+
 
 
 
@@ -140,30 +113,47 @@ $(".social").hover(function() {
 
   </head>
   <body>
-      <div id="header">
-        <a name="totop"></a>
-        <p>Nick<br/>Front-End Web Developer</p>
-        <img src="avatar.jpg">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Nick Johnson</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#aboutMe" class="click_me" name="aboutMe" id="aboutlink"><span class="txt">About Me</span></a></li>
+                     <li><a href="#skills" class="click_me" name="skills" id="skillslink"><span class="txt">Skills</span></a></li>
+                     <li><a href="#projects" class="click_me" name="projects" id="projectslink"><span class="txt">Projects</span></a></li>
+                     <li><a href="#contact" class="click_me" name="contact" id="contactlink"><span class="txt">Contact</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+       <div class="jumbotron">
+        <div class="container">
+          <p>Front-End Web Developer</p>
+          <a href="#aboutMe" class="click_me" name="aboutMe" id="aboutlink"><span class="glyphicon glyphicon-download glyphicon-large"></span></a>
         
+        </div>
       </div>
-       <div id="navbar">
-          <ul>
-             <li><a href="#aboutme" class="click_me" name="aboutMe" id="aboutlink"><span class="txt">About Me</span></a></li>
-             <li><a href="#skills" class="click_me" name="skills" id="skillslink"><span class="txt">Skills</span></a></li>
-             <li><a href="#projects" class="click_me" name="projects" id="projectslink"><span class="txt">Projects</span></a></li>
-             <li><a href="#contact" class="click_me" name="contact" id="contactlink"><span class="txt">Contact</span></a></li>
-         </ul>
-       </div>
 
       <div id="container">
           <div id="aboutMe" class="hide_div">
+            <a name="aboutme"></a>
                 <div id="me">
-                  <a name="aboutme"></a>
+                  
                   <h2>About Me</h2>
                  <p>My name is Nick and I am located on Long Island in New York. I am 22 and an aspiring front-end web developer
-                 <br>who recently recieved a bacherlors degree in computer programming and information systems at Farmingdale State College.
-                   <br>I began learning to develop websites in high school where I took a web design course. After entering college I decided to
-                   <br>pick it up again and try to make it into a career.</p>
+                 who recently recieved a bacherlors degree in computer programming and information systems at Farmingdale State College.
+                  I began learning to develop websites in high school where I took a web design course. After entering college I decided to
+                  pick it up again and try to make it into a career.</p>
                 </div>
                     <div id="farmingdale">
                        
@@ -195,7 +185,7 @@ $(".social").hover(function() {
           <div id="skills" class="hide_div">
               <div id="skillContainer">
               <a name="skills"></a>
-              <h2>Skillset includes</h2>
+              <h1>Skillset includes</h1>
                 <div id="skillinfo">
                   <p>My main skillset includes HTML, CSS and JavaScript. These are the languages I spend most time using. However, although I am no expert, I have experience using PHP, MySql and Java.
                 </div> 
@@ -211,12 +201,16 @@ $(".social").hover(function() {
           </div>
 
         </div>
+      <div class="container-fluid">
 
-          <div id="projects" class="hide_div">
-            <a name="projects"></a>
-              
-              <div id="projectContainer">
-              <div class="projects" id="landscape">
+        
+       <section class="call-to-action">
+        <div id="projects" class="hide_div">
+           <a name="projects"></a>
+         <div class="row">
+
+            <div class="col-md-4">
+              <div class="projects hoverFont" id="landscape">
                  <a href="http://teammeet.x10host.com">
                   <div class="hoverLand">
                     <h1>Team-Meet</h1>
@@ -225,11 +219,17 @@ $(".social").hover(function() {
                <img class="projectImages" src="teammeet.png" />
              
               </div>
-              <div class="projects" id="projectHeader">
-                <h2>Projects</h2>
+            </div>
+
+            <div class="col-md-4">
+              <div class="projects hoverFont" id="projectHeader">
+                <h1>Projects</h1>
                 <p>More listed on <a href="https://github.com/nj3355">Github</a><p>
               </div>
-              <div class="projects" id="blackjack">
+            </div>
+
+            <div class="col-md-4">
+              <div class="projects hoverFont" id="blackjack">
                 <a href="http://nj3355.github.io/blackjack/">
                   <div class="hoverBlack">
                   <h1>Blackjack</h1>
@@ -237,7 +237,14 @@ $(".social").hover(function() {
                   </div></a>
                <img class="projectImages" src="blackjack.png" />
               </div>
-              <div class="projects" id="list">
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <div class="projects hoverFont" id="list">
                 <a href="http://nj3355.github.io/NBA-Matching-Game">
                   <div class="hoverList">
                   <h1>Matching Game</h1>
@@ -245,29 +252,37 @@ $(".social").hover(function() {
                   </div></a>
               <img class="projectImages" src="matching.png" />
               </div>
-              
             </div>
-            
           </div>
-          <div id="contact" class="hide_div">
-               <a name="contact"></a>
-               <h1>Contact</h1>
+          
 
-             <!-- <div id="resumePDF">
-                <i class="fa fa-file-pdf-o fa-3x"></i>
-                <h4>View My Resume</h4>
-              </div>-->
-              <div id="socialContact">
+          </div>
+          </section>
+        </div>
+         
+          <div class="container-fluid">
+           <section class="call-to-action">
+            <div id="contact">
+              <a name="contact"></a>
+               <h1>Contact</h1>
+            
+             <div class="row">
+              
+              <div class="col-md-12">
+                <div id="socialContact">
                 <a href="https://github.com/nj3355">
                   <i class="fa fa-github fa-3x social">
                   <h4 class="links">Github</h4></i>
                </a>
-                <a href="https://github.com/NJ3355/resume/blob/master/Nick_JohnsonResume%20(1).pdf">
+                <a href="https://github.com/NJ3355/resume/blob/master/resume.pdf">
                   <i class="fa fa-file-pdf-o fa-3x social">
                   <h4 class="links">View My Resume</h4></i>
                </a>
               </div>
-              <div id="personalContact">
+              </div>
+
+              <div class="col-md-12">
+                <div id="personalContact">
                 <a href="njohn33555@gmail.com">
                   <i class="fa fa-envelope-o fa-3x social">
                   <h4 class="links">njohn33555@gmail.com</h4>
@@ -279,6 +294,23 @@ $(".social").hover(function() {
                 </i>
                 </a>
               </div>
+              </div>
+
+
+
+
+          
+
+          </div>
+          </section>
+        </div>
+
+             <!-- <div id="resumePDF">
+                <i class="fa fa-file-pdf-o fa-3x"></i>
+                <h4>View My Resume</h4>
+              </div>-->
+              
+              
 
 
           </div>
