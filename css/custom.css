@@ -92,6 +92,10 @@ p {
 	margin:auto;
 }
 
+.row {
+	margin:0;
+}
+
 .container-fluid {
 	padding: 0;
 }
