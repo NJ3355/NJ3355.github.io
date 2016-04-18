@@ -5,6 +5,9 @@
 body {
 	background:#D3E7F0;
 	color: #f7f7f7;
+	margin:0;
+	padding: 0;
+	overflow-x:hidden;
 	
 }
 h1,
@@ -24,7 +27,8 @@ p {
 	color: white;
 	text-align: center;
 	background-image: url("../headerimg2.jpg");
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center center;
 	padding: 15em 0;
 }
 .jumbotron p {
@@ -121,7 +125,8 @@ p {
 	width:90%;
 	margin: auto;
 	background-image: url("../farmingdale.jpg");
-	background-size: 100% 100%;
+		background-size: cover;
+	background-position: center center;
 	text-align: center;
 	overflow: hidden;
 	background-repeat: no-repeat;
@@ -229,6 +234,10 @@ p {
 #landscape {
 	display: inline-block;
 	float:left;
+	background-image: url("../teammeet.png");
+	background-size: cover;
+	background-position: center center;
+
 }
 
 .hoverLand {
@@ -250,6 +259,8 @@ p {
 #blackjack  {
 	display:inline-block;
 	float: right;
+		background-size: cover;
+	background-position: center center;
 }
 
 .hoverBlack {
@@ -265,6 +276,8 @@ p {
 #list {
 	clear: both;
 	margin: auto;
+		background-size: cover;
+	background-position: center center;
 }
 
 .hoverList{
@@ -347,7 +360,7 @@ p {
 #footer {
 	margin: 0 auto;
 	padding: 1em 0;
-	width: 100%;
+	
 	background-color: #2E2F31 ;
 	overflow: hidden;
 	color: white;
