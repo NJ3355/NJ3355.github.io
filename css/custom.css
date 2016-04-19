@@ -72,7 +72,10 @@ p {
 }
 
 .glyphicon-download {
-	color:white;
+	animation-name: example;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .glyphicon-download:hover {
@@ -405,6 +408,11 @@ a:active {
 .txt:hover {
     text-decoration: underline;
     
+}
+
+@keyframes example {
+    from  {color: white;}
+    to {color: gray;}
 }
 
 
