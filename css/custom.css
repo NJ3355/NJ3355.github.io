@@ -83,6 +83,9 @@ p {
 
 }
 
+.row {
+	margin:0;
+}
 .col-md-4 ,.col-md-12{
 	padding: 0;
 }
