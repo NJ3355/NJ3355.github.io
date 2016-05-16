@@ -26,7 +26,7 @@ p {
 	
 	color: white;
 	text-align: center;
-	background-image: url("../headerimg2.jpg");
+	background-image: url("../images/headerimg2.jpg");
 	background-size: cover;
 	background-position: center center;
 	padding: 15em 0;
@@ -130,7 +130,7 @@ p {
 	
 	width:90%;
 	margin: auto;
-	background-image: url("../farmingdale.jpg");
+	background-image: url("../images/farmingdale.jpg");
 		background-size: cover;
 	background-position: center center;
 	text-align: center;
@@ -241,7 +241,7 @@ p {
 #landscape {
 	display: inline-block;
 	float:left;
-	background-image: url("../teammeet.png");
+	background-image: url("../images/teammeet.png");
 	background-size: cover;
 	background-position: center center;
 
