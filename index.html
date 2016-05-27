@@ -61,15 +61,17 @@ $("a[href^=#]").click(function(e){
   $(".hoverLand").hide();
   $(".hoverBlack").hide();
   $(".hoverList").hide();
+  $(".hoverMatch").hide();
+  $(".hoverTeam").hide();
   $(".links").hide();
 
 
 
-    $( "#landscape" ).hover(
+    $( "#team" ).hover(
   function() {
-    $( ".hoverLand" ).show();
+    $( ".hoverTeam" ).show();
   }, function() {
-    $(".hoverLand").hide();
+    $(".hoverTeam").hide();
   })
 
     $( "#blackjack" ).hover(
@@ -79,11 +81,25 @@ $("a[href^=#]").click(function(e){
     $(".hoverBlack").hide();
   })
 
+    $( "#match" ).hover(
+  function() {
+    $( ".hoverMatch" ).show();
+  }, function() {
+    $(".hoverMatch").hide();
+  })
+
     $( "#list" ).hover(
   function() {
     $( ".hoverList" ).show();
   }, function() {
     $(".hoverList").hide();
+  })
+
+    $( "#landscape" ).hover(
+  function() {
+    $( ".hoverLand" ).show();
+  }, function() {
+    $(".hoverLand").hide();
   })
 
 
@@ -215,9 +231,9 @@ $(".social").hover(function() {
             </div>
 
             <div class="col-md-4">
-              <div class="projects hoverFont" id="landscape">
+              <div class="projects hoverFont" id="team">
                  <a href="http://teammeet.x10host.com">
-                  <div class="hoverLand">
+                  <div class="hoverTeam">
                     <h1>Team-Meet</h1>
                     <p>Tools: HTML, CSS, jQuery, PHP & MySQL</p>
                   </div></a>
@@ -248,16 +264,40 @@ $(".social").hover(function() {
 
 
           <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-              <div class="projects hoverFont" id="list">
+
+            <div class="col-md-4">
+              <div class="projects hoverFont" id="match">
                 <a href="http://nj3355.github.io/NBA-Matching-Game">
-                  <div class="hoverList">
+                  <div class="hoverMatch">
                   <h1>Matching Game</h1>
                   <p>Tools: HTML, CSS and JavaScript</p>
                   </div></a>
               <img class="projectImages" src="images/matching.png" />
               </div>
             </div>
+
+            <div class="col-md-4">
+              <div class="projects hoverFont" id="list">
+                <a href="http://nj3355.github.io/ToDos/">
+                  <div class="hoverList">
+                  <h1>Todo List</h1>
+                  <p>Tools: HTML, CSS and JavaScript</p>
+                  </div></a>
+               <img class="projectImages" src="images/todos.png" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="projects hoverFont" id="landscape">
+                <a href="http://totallandscape.teammeet.x10host.com/TotalLandscapeWebsite/">
+                  <div class="hoverLand">
+                  <h1>Total Landscape</h1>
+                  <p>Tools: HTML, CSS, JavaScript & PHP</p>
+                  </div></a>
+               <img class="projectImages" src="images/landscape.png" />
+              </div>
+            </div>
+
           </div>
           
 
