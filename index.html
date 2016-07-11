@@ -91,7 +91,7 @@
               <a name="skills"></a>
               <h1>Skillset Includes</h1>
                 <div id="skillinfo">
-                  <p>My main skillset includes HTML, CSS and JavaScript. These are the languages I spend most time using. I also have experience using jQuery, PHP, MySQL, Bootstrap, SASS, GULP, Git and Java.</p>
+                  <p>My main skillset includes HTML, CSS and JavaScript. These are the languages I spend most time using. I also have experience using jQuery, Angular, PHP, MySQL, Bootstrap, SASS, GULP, Git and Java.</p>
                 </div> 
               <div id="mainskills">
                 <img src="images/skills.png" />
@@ -260,115 +260,7 @@
       </div>
 
 
-<script>
-
-$(document).ready( function() {
-
-/*var position = $("#navbar").offset().top;
-
-function stickyHeader() {
-  if (position < $(document).scrollTop()) {
-    $("#navbar").addClass("sticky");
-  } else {
-    $("#navbar").removeClass("sticky");
-  }
-}
-
-$(window).scroll(function() {
-  stickyHeader();
-});*/
-
-
-
-
-$("a[href^=#]").click(function(e){
-    e.preventDefault();
-
-
-      
-    var dest = $(this).attr('href');
-
-    if(dest === "#totop"){
-        $('body').scrollTop(0);
-    }
-
-    console.log(dest); 
-    
-    $('html,body').animate({ 
-        scrollTop: $(dest).offset().top 
-      }, 'slow'); 
-});
-
-
-
-  $(".hoverLand").hide();
-  $(".hoverBlack").hide();
-  $(".hoverList").hide();
-  $(".hoverMatch").hide();
-  $(".hoverTeam").hide();
-  $(".links").hide();
-
-
-
-    $( "#team" ).hover(
-  function() {
-    $( ".hoverTeam" ).show();
-  }, function() {
-    $(".hoverTeam").hide();
-  })
-
-    $( "#blackjack" ).hover(
-  function() {
-    $( ".hoverBlack" ).show();
-  }, function() {
-    $(".hoverBlack").hide();
-  })
-
-    $( "#match" ).hover(
-  function() {
-    $( ".hoverMatch" ).show();
-  }, function() {
-    $(".hoverMatch").hide();
-  })
-
-    $( "#list" ).hover(
-  function() {
-    $( ".hoverList" ).show();
-  }, function() {
-    $(".hoverList").hide();
-  })
-
-    $( "#landscape" ).hover(
-  function() {
-    $( ".hoverLand" ).show();
-  }, function() {
-    $(".hoverLand").hide();
-  })
-
-
-
-
-$(".social").hover(function() {
-     $(this).find(".links").show();
-   }, function() {
-     $(this).find(".links").hide();
-   })
-
-});
-
-
-
- /*$(".social").hover(function() {
-     $(".links").show();
-   }, function() {
-     $(".links").hide();
-   })*/
-
-
-
-
-
-</script>
+<script src="js/script.js"></script>
 
   </body>
 </html>
